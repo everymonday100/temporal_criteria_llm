@@ -1,0 +1,22 @@
+# Data and checkpoints (DO NOT UPLOAD)
+data/
+*.pt
+*.pth
+*.npz
+*.pkl
+*.safetensors
+*.bin
+
+# Python cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Environments
+env_312/
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
