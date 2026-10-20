@@ -33,18 +33,18 @@ python stage1/eval_controller.py --n_test 300 --n_train_skip 700
 python stage1/train_xlam_controller_v2.py --lambda_contrast 1.0
 python stage1/eval_xlam_matrix.py
 ```
-Boundary (Forward-model)
+### Boundary (Forward-model)
 ```bash
 python stage1/boundary_extract_hidden.py --streams train_streams.pkl --variant F
 python stage1/boundary_train_fm.py --design {R,O} --variant F
 ```
-Continuity (Decision-rule dependence)
+### Continuity (Decision-rule dependence)
 ```bash
 python stage1/continuity_gen_stream.py
 python stage1/continuity_extract_context.py
 python stage1/continuity_probe_m3.py
 ```
-Citation
+### Citation
 If you use this code in your research, please cite:
 
 ```bibtex
